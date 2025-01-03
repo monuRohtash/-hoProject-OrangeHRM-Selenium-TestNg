@@ -19,7 +19,7 @@ import org.testng.annotations.BeforeTest;
 
 
 public class OrangeHrmTest {
-	
+
 
 	public WebDriver driver;
 
@@ -74,7 +74,7 @@ public class OrangeHrmTest {
 
 	@Test (priority=2, enabled=true)
 	public void InvalidLogin() throws InterruptedException// Login with invalid credential 
-	{
+	{      
 		driver.findElement(By.xpath("//input[@placeholder='Username']")).sendKeys("Admin");  
 		driver.findElement(By.xpath("//input[@placeholder='Password']")).sendKeys("admin");
 		driver.findElement(By.xpath("//button[normalize-space()='Login']")).click();
@@ -89,9 +89,7 @@ public class OrangeHrmTest {
 			System.out.println("Valid credentials "); 
 		}
 
-
 		driver.navigate().refresh();
-
 
 	}
 
@@ -350,13 +348,13 @@ public class OrangeHrmTest {
 		//find total links
 		List<WebElement> totalLinksElements= driver.findElements(By.xpath("//ul[@class='oxd-pagination__ul']/li"));
 
-		
 
-	
+
+
 		int totalLinks = totalLinksElements.size();
-		
+
 		for (int i=0; i<totalLinks; i++)//0,1,2,3,4
-			
+
 			System.out.println(totalLinks);
 
 		{
@@ -394,42 +392,42 @@ public class OrangeHrmTest {
 		logout();
 
 	}
-	
-	
+
+
 	@Test(priority=10, enabled=true)
 	public void applyLeave() throws InterruptedException
 	{
 		//call login method
 		login();
-		
-	Thread.sleep(1000);
+
+		Thread.sleep(1000);
 		//click on leave menu
 		driver.findElement(By.linkText("Leave")).click();
-		
+
 		//click on Apply menu
 		driver.findElement(By.linkText("Apply")).click();
-		
+
 		//click on leave type drop down
 		driver.findElement(By.xpath("//i[@class='oxd-icon bi-caret-down-fill oxd-select-text--arrow']")).click();
-		
+
 		//select CAN-FMLA option from leave type dropdown
 		driver.findElement(By.xpath("//*[contains(text(),'CAN')]")).click();
-		
+
 		//enter from date
-		driver.findElement(By.xpath("//div[@class='oxd-date-input']/input")).sendKeys("13-11-2024");
-		
-		
+		driver.findElement(By.xpath("//div[@class='oxd-date-input']/input")).sendKeys("11-11-2024");
+
+
 		//enter comment
 		driver.findElement(By.tagName("textarea")).sendKeys("This is my personal leave");
 		Thread.sleep(3000);
-		
-		
+
+
 		//click on Apply button
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
-		
-		
+
+		System.out.println("Apply leave success!");
 		Thread.sleep(5000);
-		
+
 		logout();
 
 	}
@@ -445,6 +443,6 @@ public class OrangeHrmTest {
 		driver.close();
 		driver.quit();
 	}
-	
+
 
 }
