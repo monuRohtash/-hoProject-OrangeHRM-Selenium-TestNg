@@ -1,97 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="9" failed="1" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-01T23:55:17 IST" name="Default suite" finished-at="2025-01-01T23:56:53 IST" duration-ms="96350">
+  <suite started-at="2025-01-03T18:17:15 IST" name="Default suite" finished-at="2025-01-03T18:18:52 IST" duration-ms="97313">
     <groups>
     </groups>
-    <test started-at="2025-01-01T23:55:17 IST" name="Default test" finished-at="2025-01-01T23:56:53 IST" duration-ms="96350">
-      <class name="OrangeHRMWebSite.testclass">
-        <test-method signature="testone()[pri:1, instance:OrangeHRMWebSite.testclass@8519cb4]" started-at="2025-01-01T23:55:29 IST" name="testone" finished-at="2025-01-01T23:55:29 IST" duration-ms="8" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testone -->
-      </class> <!-- OrangeHRMWebSite.testclass -->
-      <class name="OrangeHRMWebSite.Test2">
-        <test-method signature="test2()[pri:0, instance:OrangeHRMWebSite.Test2@35841320]" started-at="2025-01-01T23:56:52 IST" name="test2" finished-at="2025-01-01T23:56:52 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test2 -->
-      </class> <!-- OrangeHRMWebSite.Test2 -->
+    <test started-at="2025-01-03T18:17:15 IST" name="Default test" finished-at="2025-01-03T18:18:52 IST" duration-ms="97313">
       <class name="OrangeHRMWebSite.OrangeHrmTest">
-        <test-method is-config="true" signature="DriverSetup()[pri:0, instance:OrangeHRMWebSite.OrangeHrmTest@7ae0a9ec]" started-at="2025-01-01T23:55:17 IST" name="DriverSetup" finished-at="2025-01-01T23:55:29 IST" duration-ms="12185" status="PASS">
+        <test-method is-config="true" signature="DriverSetup()[pri:0, instance:OrangeHRMWebSite.OrangeHrmTest@43df23d3]" started-at="2025-01-03T18:17:15 IST" name="DriverSetup" finished-at="2025-01-03T18:17:23 IST" duration-ms="7733" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DriverSetup -->
-        <test-method signature="Logo()[pri:1, instance:OrangeHRMWebSite.OrangeHrmTest@7ae0a9ec]" started-at="2025-01-01T23:55:29 IST" name="Logo" finished-at="2025-01-01T23:55:30 IST" duration-ms="1049" status="PASS">
+        <test-method signature="Logo()[pri:1, instance:OrangeHRMWebSite.OrangeHrmTest@43df23d3]" started-at="2025-01-03T18:17:23 IST" name="Logo" finished-at="2025-01-03T18:17:24 IST" duration-ms="1050" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Logo -->
-        <test-method signature="InvalidLogin()[pri:2, instance:OrangeHRMWebSite.OrangeHrmTest@7ae0a9ec]" started-at="2025-01-01T23:55:30 IST" name="InvalidLogin" finished-at="2025-01-01T23:55:33 IST" duration-ms="3070" status="PASS">
+        <test-method signature="InvalidLogin()[pri:2, instance:OrangeHRMWebSite.OrangeHrmTest@43df23d3]" started-at="2025-01-03T18:17:24 IST" name="InvalidLogin" finished-at="2025-01-03T18:17:26 IST" duration-ms="2181" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InvalidLogin -->
-        <test-method signature="ValidLogin()[pri:3, instance:OrangeHRMWebSite.OrangeHrmTest@7ae0a9ec]" started-at="2025-01-01T23:55:33 IST" name="ValidLogin" finished-at="2025-01-01T23:55:38 IST" duration-ms="4585" status="PASS">
+        <test-method signature="ValidLogin()[pri:3, instance:OrangeHRMWebSite.OrangeHrmTest@43df23d3]" started-at="2025-01-03T18:17:26 IST" name="ValidLogin" finished-at="2025-01-03T18:17:31 IST" duration-ms="4588" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidLogin -->
-        <test-method signature="PIM()[pri:4, instance:OrangeHRMWebSite.OrangeHrmTest@7ae0a9ec]" started-at="2025-01-01T23:55:38 IST" name="PIM" finished-at="2025-01-01T23:55:51 IST" duration-ms="12898" status="PASS">
+        <test-method signature="PIM()[pri:4, instance:OrangeHRMWebSite.OrangeHrmTest@43df23d3]" started-at="2025-01-03T18:17:31 IST" name="PIM" finished-at="2025-01-03T18:17:44 IST" duration-ms="13200" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PIM -->
-        <test-method signature="SearchByName()[pri:5, instance:OrangeHRMWebSite.OrangeHrmTest@7ae0a9ec]" started-at="2025-01-01T23:55:51 IST" name="SearchByName" finished-at="2025-01-01T23:56:03 IST" duration-ms="11948" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: 
-at org.testng.AssertJUnit.fail(AssertJUnit.java:65)
-at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:23)
-at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:33)
-at OrangeHRMWebSite.OrangeHrmTest.SearchByName(OrangeHrmTest.java:205)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="SearchByName()[pri:5, instance:OrangeHRMWebSite.OrangeHrmTest@43df23d3]" started-at="2025-01-03T18:17:44 IST" name="SearchByName" finished-at="2025-01-03T18:17:56 IST" duration-ms="11874" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SearchByName -->
-        <test-method signature="DeleteEmployee()[pri:8, instance:OrangeHRMWebSite.OrangeHrmTest@7ae0a9ec]" started-at="2025-01-01T23:56:03 IST" name="DeleteEmployee" finished-at="2025-01-01T23:56:20 IST" duration-ms="16966" status="PASS">
+        <test-method signature="DeleteEmployee()[pri:8, instance:OrangeHRMWebSite.OrangeHrmTest@43df23d3]" started-at="2025-01-03T18:17:56 IST" name="DeleteEmployee" finished-at="2025-01-03T18:18:14 IST" duration-ms="17920" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DeleteEmployee -->
-        <test-method signature="ListOfEmployee()[pri:9, instance:OrangeHRMWebSite.OrangeHrmTest@7ae0a9ec]" started-at="2025-01-01T23:56:20 IST" name="ListOfEmployee" finished-at="2025-01-01T23:56:35 IST" duration-ms="15630" status="PASS">
+        <test-method signature="ListOfEmployee()[pri:9, instance:OrangeHRMWebSite.OrangeHrmTest@43df23d3]" started-at="2025-01-03T18:18:14 IST" name="ListOfEmployee" finished-at="2025-01-03T18:18:30 IST" duration-ms="16235" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ListOfEmployee -->
-        <test-method signature="applyLeave()[pri:10, instance:OrangeHRMWebSite.OrangeHrmTest@7ae0a9ec]" started-at="2025-01-01T23:56:35 IST" name="applyLeave" finished-at="2025-01-01T23:56:52 IST" duration-ms="16799" status="PASS">
+        <test-method signature="applyLeave()[pri:10, instance:OrangeHRMWebSite.OrangeHrmTest@43df23d3]" started-at="2025-01-03T18:18:30 IST" name="applyLeave" finished-at="2025-01-03T18:18:51 IST" duration-ms="21311" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- applyLeave -->
-        <test-method is-config="true" signature="BrowserClose()[pri:0, instance:OrangeHRMWebSite.OrangeHrmTest@7ae0a9ec]" started-at="2025-01-01T23:56:52 IST" name="BrowserClose" finished-at="2025-01-01T23:56:53 IST" duration-ms="1155" status="PASS">
+        <test-method is-config="true" signature="BrowserClose()[pri:0, instance:OrangeHRMWebSite.OrangeHrmTest@43df23d3]" started-at="2025-01-03T18:18:51 IST" name="BrowserClose" finished-at="2025-01-03T18:18:52 IST" duration-ms="1160" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrowserClose -->
