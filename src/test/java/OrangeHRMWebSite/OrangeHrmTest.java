@@ -1,4 +1,4 @@
-package OrangeHRMWebSite;
+	package OrangeHRMWebSite;
 
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
@@ -63,7 +63,7 @@ public class OrangeHrmTest {
 	public void Logo () throws InterruptedException
 	{
 		Thread.sleep(1000);
-		boolean status=driver.findElement(By.xpath("//img[@alt='company-branding']")).isDisplayed();
+		boolean status = driver.findElement(By.xpath("//img[@alt='company-branding']")).isDisplayed();
 		System.out.println("logo Displayed.."+status);	  
 
 
@@ -212,7 +212,7 @@ public class OrangeHrmTest {
 
 	}
 
-	@Test(priority=6, enabled=false)
+	@Test(priority=6, enabled=true)
 	public void SearchByID() throws InterruptedException {
 
 
