@@ -6,7 +6,7 @@
       <class name="OrangeHRMWebSite.OrangeHrmTest">
         <methods>
           <include name="BrowserClose"/>
-          <include name="SearchByName"/>
+          <include name="SearchByID"/>
           <include name="DriverSetup"/>
         </methods>
       </class> <!-- OrangeHRMWebSite.OrangeHrmTest -->
